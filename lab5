@@ -35,7 +35,7 @@ int main()
 	for (int i = rank + low_limit ; i < high_limit; i+=rank)
 	{
 		int flag = 0;
-		for (int k = 2; k < i; k++)
+		for (int k = 2; k < sqrt(i); k++)
 		{
 			if (i % k == 0) flag = 1;
 		}
