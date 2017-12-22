@@ -14,7 +14,7 @@ int main()
 	ofstream fout;
 	MPI_Status status;
 	fout.open("output0.txt");
-	int low_limit=1, high_limit=10000, size, rank;
+	int low_limit, high_limit, size, rank;
 	MPI_Comm_size(MPI_COMM_WORLD, &size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	double time1;
