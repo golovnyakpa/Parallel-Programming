@@ -52,7 +52,7 @@ int main()
 	if (rank==0)
 	{
 		for (int i=low_limit; i<high_limit; i++)
-			if (a[i] == 1) fout << a[i] << endl;
+			if (a[i] == 1) fout << i << endl;
 		cout << "Time in seconds = " << MPI_Wtime()-time1 << endl;
 	}
 	MPI_Finalize();
